@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security — Phaser by Keramas, Inc.</title>
+  <meta name="description" content="How Phaser keeps each company's documents apart from every other company's, how that is tested, and how to see the test report in a demo.">
+  <link rel="canonical" href="https://keramas.ai/security.html">
+  <meta name="theme-color" content="#0D1A2A">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <a class="brand" href="/" aria-label="Keramas, Inc. home">
+        <span class="brand-chip"><img src="assets/keramas-logo.png" alt="Keramas, Inc." width="31" height="31"></span>
+        <span class="brand-name">Keramas, Inc.</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="/security.html" aria-current="page">Security</a>
+        <a class="btn-email" href="mailto:info@keramas.ai">info@keramas.ai</a>
+      </nav>
+    </header>
+
+    <main class="prose">
+      <div class="eyebrow">PHASER</div>
+      <h1>Security</h1>
+      <p class="lede">Your procedures and design documents are among the most sensitive things your company owns. Phaser is built to keep them yours, and we would rather show you the evidence than ask you to take our word for it.</p>
+
+      <h2>Your company's data is kept apart</h2>
+      <p>Phaser keeps each company's data apart from every other company's. The database itself enforces that separation, on every table that holds customer data, so it does not depend on each part of the application remembering to check.</p>
+
+      <h2>We test it by trying to break it</h2>
+      <p>An automated test suite acts as one company and tries to read, change, delete and download another company's work, through the same web endpoints the product itself uses. Every attempt has to be refused. Each refusal is paired with proof that the data was really there to protect, so a test cannot pass by accident.</p>
+      <p>The tests run on a test copy of Phaser with made-up companies, never on customer data.</p>
+
+      <h2>Single sign-on with your company accounts</h2>
+      <p>Your people sign in through single sign-on with their company accounts, and Phaser never sees or stores a password. Personal accounts and people your administrator has not invited are turned away. Expired or altered sessions are rejected.</p>
+      <p>Where your data is processed, when Keramas staff can open it and how long it is kept are on the <a href="/privacy.html">privacy page</a>.</p>
+
+      <h2>See the report in a demo</h2>
+      <p>The test suite writes a plain-English report. It lists each check and whether it passed, names the exact version of the software that was tested, and says what it does not cover. Ask for a demo and we will walk you and your security team through it.</p>
+      <p class="cta"><a class="btn-email" href="mailto:info@keramas.ai?subject=Phaser%20security%20demo">Ask for a demo</a></p>
+      <p class="dateline">Last updated November 12, 2026.</p>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p class="contact">Contact us to learn more: <a href="mailto:info@keramas.ai">info@keramas.ai</a></p>
+        <div class="footer-right">
+          <a class="footer-link" href="/security.html">Security</a>
+          <a class="footer-link" href="/privacy.html">Privacy</a>
+          <div class="copyright">© 2026 KERAMAS, INC.</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

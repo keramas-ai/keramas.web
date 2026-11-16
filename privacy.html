@@ -62,10 +62,11 @@
         <div class="footer-right">
           <a class="footer-link" href="/security.html">Security</a>
           <a class="footer-link" href="/privacy.html">Privacy</a>
-          <div class="copyright">© 2026 KERAMAS, INC.</div>
+          <div class="copyright">© <span id="year">2026</span> KERAMAS, INC.</div>
         </div>
       </div>
     </footer>
   </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

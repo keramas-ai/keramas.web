@@ -236,7 +236,9 @@ h1 {
   color: var(--white);
 }
 .prose p { margin: 12px 0 0; font-size: clamp(16px, 1.2vw, 18px); line-height: 1.55; color: var(--text); }
-.prose .cta { margin-top: 24px; }
+.prose ul { margin: 24px 0; padding-left: 1.2em; }
+.prose li { margin-top: 12px; font-size: clamp(16px, 1.2vw, 18px); line-height: 1.55; color: var(--text); }
+.prose li strong { font-weight: 600; color: var(--white); }
 .prose .dateline { font-family: var(--font-mono); font-size: 13px; letter-spacing: .06em; color: var(--muted); margin-top: 28px; }
 
 /* ---------- Footer ---------- */

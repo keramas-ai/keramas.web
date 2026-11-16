@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security — Phaser by Keramas, Inc.</title>
+  <meta name="description" content="How Phaser handles your company's documents: company separation, AI models, hosting, sign-in and staff access.">
+  <link rel="canonical" href="https://keramas.ai/security.html">
+  <meta name="theme-color" content="#0D1A2A">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <a class="brand" href="/" aria-label="Keramas, Inc. home">
+        <span class="brand-chip"><img src="assets/keramas-logo.png" alt="Keramas, Inc." width="31" height="31"></span>
+        <span class="brand-name">Keramas, Inc.</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="btn-email" href="mailto:info@keramas.ai">info@keramas.ai</a>
+      </nav>
+    </header>
+
+    <main class="prose">
+      <div class="eyebrow">PHASER</div>
+      <h1>Security</h1>
+      <p class="lede">How Phaser handles your company's documents.</p>
+
+      <ul>
+        <li><strong>Company separation.</strong> Each company's data is kept apart from other companies'. The database enforces it, and automated tests check it on each change.</li>
+        <li><strong>AI models.</strong> Phaser drafts with Anthropic's Claude models and indexes your documents for search with Cohere's embedding model. Both run through Amazon Bedrock, in Keramas's own AWS account, set to zero data retention. Your content is not shared with either provider and is not used for training.</li>
+        <li><strong>Hosting.</strong> Amazon Web Services, United States. Connections use HTTPS, and the database is encrypted at rest.</li>
+        <li><strong>Sign-in.</strong> Single sign-on with Google Workspace. Microsoft Entra ID is being added. Phaser does not hold passwords.</li>
+        <li><strong>Staff access.</strong> Limited to named Keramas staff, and logged.</li>
+      </ul>
+
+      <p>For security-related questions, email <a href="mailto:security@keramas.ai">security@keramas.ai</a>.</p>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p class="contact">Contact us to learn more: <a href="mailto:info@keramas.ai">info@keramas.ai</a></p>
+        <div class="footer-right">
+          <a class="footer-link" href="/security.html">Security</a>
+          <a class="footer-link" href="/privacy.html">Privacy</a>
+          <div class="copyright">© <span id="year">2026</span> KERAMAS, INC.</div>
+          <a class="btn-email" href="mailto:info@keramas.ai?subject=Phaser%20demo">Book a demo</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

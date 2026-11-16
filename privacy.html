@@ -52,19 +52,21 @@
       <p>For as long as your company uses Phaser. Your company can ask for its content to be deleted by writing to <a href="mailto:info@keramas.ai">info@keramas.ai</a>, and Keramas will confirm when it is done. One thing stays: the record of which administrator gave or removed each person's access, kept for security review.</p>
 
       <h2>Changes</h2>
-      <p>When this page changes, the new version is posted here with a new date.</p>
-      <p class="dateline">Last updated November 9, 2026.</p>
+      <p>When this page changes, the new version is posted here.</p>
     </main>
 
     <footer class="footer">
       <div class="footer-inner">
         <p class="contact">Contact us to learn more: <a href="mailto:info@keramas.ai">info@keramas.ai</a></p>
         <div class="footer-right">
+          <a class="footer-link" href="/security.html">Security</a>
           <a class="footer-link" href="/privacy.html">Privacy</a>
-          <div class="copyright">© 2026 KERAMAS, INC.</div>
+          <div class="copyright">© <span id="year">2026</span> KERAMAS, INC.</div>
+          <a class="btn-email" href="mailto:info@keramas.ai?subject=Phaser%20demo">Book a demo</a>
         </div>
       </div>
     </footer>
   </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
